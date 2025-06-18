@@ -1,0 +1,414 @@
+:root {
+    --qsk-cart-countdown-reminder-bg-color: #3161cb;
+    --qsk-cart-countdown-reminder-text-color: #ffffff;
+    --qsk-cart-countdown-reminder-z-index: 9999;
+    --qsk-cart-countdown-bar-bg-color: #3161cb;
+    --qsk-cart-countdown-bar-text-color: #ffffff;
+    --qsk-cart-countdown-bar-bg-color-completed: #214ba5;
+    --qsk-popup-z-index: 10000;
+    --qsk-popup-trigger-button-z-index: 10000;
+    --qsk-popup-border-radius: 6px;
+    --qsk-popup-bg-color: #fff;
+    --qsk-popup-description-color: #424242;
+    --qsk-popup-btn-border-color: #cecece;
+    --qsk-promobar-z-index: 9999;
+    --qsk-social-proof-z-index: 9999;
+    --qsk-sproof-text-color: #1e3444;
+    --qsk-sproof-review-icon-color: #F1C644;
+    --qsk-salespop-width: 320px;
+    --qsk-salespop-padding: 8px;
+    --qsk-salespop-thumbnail-size: 64px;
+    --qsk-salespop-gutter: 10px;
+    --qsk-salespop-content-width: calc(var(--qsk-salespop-width) - var(--qsk-salespop-gutter) - var(--qsk-salespop-thumbnail-size) - var(--qsk-salespop-padding) * 2);
+    --qsk-salespop-desc-color: #4a5355;
+    --qsk-salespop-link-color: #573ca9;
+    --qsk-salespop-link-color-hover: darken(#573ca9, .03);
+    --qsk-vcount-width: 220px;
+    --qsk-vcount-gutter: 5px;
+    --qsk-vcount-dot-size: 35px;
+    --qsk-vcount-content-width: calc(var(--qsk-vcount-width) - var(--qsk-vcount-gutter) - var(--qsk-salespop-padding) + 50px);
+    --qsk-vcount-dot-color: #7254e6;
+    --qsk-vcount-text-color: #573ca9;
+    --qsk-scount-width: 220px;
+    --qsk-scount-gutter: 15px;
+    --qsk-scount-icon-size: 40px;
+    --qsk-scount-content-width: calc(var(--qsk-scount-width) - var(--qsk-scount-gutter) - var(--qsk-salespop-padding) * 2 - var(--qsk-scount-icon-size));
+    --qsk-scount-text-color: #57c7bb;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+.nav {
+    display: flex; /* Makes the nav a flex container */
+    align-items: center; /* Align items vertically */
+    background: #fff; /* Background color */
+    padding: 0.5rem 1rem; /* Adds padding for spacing */
+}
+
+.logo img {
+    display: block; /* Ensures the image behaves like a block element */
+    margin-left: 20px; /* Adds space to the left of the logo */
+    border-radius: 50%; /* Makes the image circular */
+    height: 50px; /* Adjust height */
+    max-height: 100%; /* Ensures the image fits within the nav height */
+    max-width: 110%; /* Ensures the image is responsive */
+    height: 50px; /* Adjust height */
+    width: 110px; /* Maintain aspect ratio */
+}
+
+.nav-list {
+    display: flex; /* Align nav items horizontally */
+    align-items: center; /* Align items vertically */
+    list-style: none; /* Remove default list styling */
+    margin: 0;
+    padding: 0;
+    margin-left: 20px; /* Adds space to the left of the nav list */
+    gap: 10px; /* Add spacing between nav items */
+}
+
+.nav-list li {
+    cursor: pointer;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-list li:hover {
+    background-color: rgb(179, 152, 152);
+    color: yellow;
+    border-radius: 5px;
+}
+
+.nav-list li.active{
+    background-color: brown;
+    color: yellow;
+    text-transform: capitalize;
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.nav-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-list li a:hover{
+    color: rgb(84, 20, 149);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-list li a.active{
+    color: rgb(84, 20, 149);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-list li a.active:hover{
+    color: rgb(84, 20, 149);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.nav-list li a.active:visited{
+    color: rgb(84, 20, 149);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    color: rgb(22, 77, 77);
+}
+.card1{
+    color: rgb(43, 43, 69);
+    display: block;
+    justify-content: flex-end;
+}
+.dav{
+    animation: bounce 2s infinite; /* Applies the bounce animation */
+    overflow: hidden;
+    padding-top: 50px;
+    margin-left: 30px;
+    gap: 20px;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.dav1{
+    height: 200px;
+    width: 350px;
+    border-radius: 10px;
+    background-color: black;
+    box-shadow: 20px;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+.davb{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.dava{
+    animation: bounce 3s infinite;
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+    background-color: burlywood;
+}
+.dva{
+    display: block;
+    height: 300px; /* Add height */
+    width: 500px; /* Add width */
+    background-color: rgb(71, 19, 19); /* Add a background color for visibility */
+}
+.davb1{
+    height: 100px; /* Adjust as needed */
+    width: 500px; /* Adjust as needed */
+    border-radius: 10px;
+    background-color: burlywood;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for visibility */
+}
+.table, .th, .td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: left;
+}
+.table {
+    width: 100%;
+    border-radius: 10px;
+    background-color: burlywood;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for visibility */
+}
+.table th {
+    background-color: rgb(243, 237, 237);
+    color: rgba(63, 4, 4, 0.233);
+}
+.table td {
+    background-color: rgb(236, 229, 229);
+    color: rgba(63, 4, 4, 0.233);
+}
+.table th, .table td {
+    padding: 10px;
+    text-align: left;
+}
+.carousel-inner img {
+  max-height: 350px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensures the image scales properly */
+}
+
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  display: none; /* Bootstrap will handle display */
+  position: absolute; /* Position it absolutely */
+  background-color: #29cd1b; /* Background color */
+  min-width: 160px; /* Minimum width */
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2); /* Shadow for depth */
+  z-index: 1; /* Ensure it appears above other elements */
+}
+.dropdown-menu a {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dropdown-menu a:hover {
+  background-color: #24ae3d; /* Background color on hover */
+}
+.dropdown-menu a.active {
+  background-color: #24ae3d; /* Background color for active link */
+}
+.dropdown-menu a.active:hover {
+  background-color: #24ae3d; /* Background color for active link on hover */
+}
+.dropdown-menu a.active:visited {
+  background-color: #24ae3d; /* Background color for active link when visited */
+}
+.dropdown-menu .dropdown-item {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px; /* Adjust as needed for your design */
+}
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  background-color: rgb(208, 87, 87) !important;
+  color: #f3f3f6 !important;
+}
+.navbar-items:hover,
+.navbar-items:focus {
+  background-color: #253027 !important; /* Background color on hover */
+  color: rgb(215, 128, 128) !important; /* Text color on hover */
+
+}
+.carousel-item img {
+  max-height: 350px; /* Adjust the height as needed */
+  object-fit: cover; /* Ensures the image scales properly */
+}
+.carousel-item {
+  height: 350px; /* Set a fixed height for the carousel item */
+}
+.carousel-inner {
+  height: 350px; /* Set a fixed height for the carousel inner */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000; /* Background color for the control icons */
+  border-radius: 50%; /* Make the icons circular */
+  padding: 10px; /* Padding around the icons */
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 5%; /* Adjust the width of the control buttons */
+}
+.carousel-control-prev {
+  left: 10px; /* Position the previous button */
+}
+.carousel-control-next {
+  right: 10px; /* Position the next button */
+}
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: #24ae3d; /* Change background color on hover */
+}   
+.carousel-control-prev:focus,
+.carousel-control-next:focus {
+  outline: none; /* Remove focus outline */
+}
+.carousel-control-prev:active,
+.carousel-control-next:active {
+  background-color: #24ae3d; /* Change background color on active */
+}
+
+.navbar-nav .nav-item,
+.navbar-nav .nav-link {
+  text-transform: uppercase;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+  text-decoration: underline;
+  color: #573ca9;
+}
+
+.flex-box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.flex-box {
+  object-fit: cover;
+  flex: 1 1 calc(20% - 16px); /* 5 per row with gap */
+  min-width: 180px;
+  max-width: 220px;
+  height: 260px; /* Normal height for clothing display */
+  background: white;
+  color: #130d0d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  margin-bottom: 16px;
+ transition: transform 0.3s, box-shadow 0.3s;
+
+}
+.box-img-wrapper {
+  position: relative;
+  width: 100%;
+  height: 220px; /* or your preferred height */
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.box-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 10px;
+}
+.imag{
+  width: fit-content;
+  height: 300px;
+  margin-bottom: 200px;
+  position: fixed;
+  position: relative;
+  background-blend-mode:soft-light;
+  filter: blur();
+}
+.text p{
+  position: absolute;
+  color: #24ae3d;
+  margin-top: 500px;
+}
+.box-img-text {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 1rem;
+  border-radius: 0 0 10px 10px;
+}
+.box-img-text p {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 100px;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  font-size: 1rem;
+  border-radius: 0 0 10px 10px;
+}
+.original1{
+    height: 50%;
+    width: 100px;
+    display: inline-flex;
+  }
+  .original3{
+  max-width: 100%;
+  height: auto;
+  display: block;
+    object-fit: cover;
+  }
+.orignal3 img {
+  margin: 0;
+  padding: 0;
+}

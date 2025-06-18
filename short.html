@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HEAVENLY TRENDY BOUTIQUE | Quality Baggy Short</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+      #shorts {
+        width: 100%;
+        max-width: 750px;
+        height: 600px;
+        object-fit: cover;
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      }
+      .product-details {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        padding: 32px 24px;
+        margin-top: 32px;
+      }
+      .product-title {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #24ae3d;
+        margin-bottom: 12px;
+      }
+      .product-price {
+        font-size: 1.3rem;
+        font-weight: 600;
+        color: #222;
+        margin-bottom: 18px;
+      }
+      .form-label {
+        font-weight: 500;
+      }
+      .cart-btn {
+        width: 100%;
+        font-size: 1.1rem;
+        margin-top: 12px;
+      }
+      @media (max-width: 768px) {
+        .product-details {
+          padding: 18px 8px;
+        }
+        #shorts {
+          max-width: 100%;
+          height: 220px;
+        }
+      }
+    </style>
+  </head>
+  <body style="background-image: url(image.png);">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light px-4" style="background: #fff;">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="WhatsApp Image 2025-05-06 at 17.37.44_d20bf922.jpg" alt="Logo" height="40" width="40">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase d-flex align-items-center">
+            <li class="nav-item px-2">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="wardrobe.html">Wardrobe</a>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" href="#" id="tshirtDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                T-Shirts & Pants
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="tshirtDropdown">
+                <li><a class="dropdown-item" href="#">Vintage</a></li>
+                <li><a class="dropdown-item" href="#">Polos</a></li>
+                <li><a class="dropdown-item" href="#">Corporate Shirts</a></li>
+                <li><a class="dropdown-item" href="#">Casual/Print Shirts</a></li>
+                <li><a class="dropdown-item" href="#">Trouser</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" href="#" id="accessoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Accessories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="accessoriesDropdown">
+                <li><a class="dropdown-item" href="#">All Accessories</a></li>
+                <li><a class="dropdown-item" href="#">Bracelets</a></li>
+                <li><a class="dropdown-item" href="#">Cufflinks</a></li>
+                <li><a class="dropdown-item" href="#">Sunglasses</a></li>
+                <li><a class="dropdown-item" href="#">Belts</a></li>
+                <li><a class="dropdown-item" href="#">Bags & Wallets</a></li>
+                <li><a class="dropdown-item" href="#">Watches</a></li>
+                <li><a class="dropdown-item" href="#">Hats</a></li>
+                <li><a class="dropdown-item" href="#">Ties</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" href="#" id="shoesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Shoes
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="shoesDropdown">
+                <li><a class="dropdown-item" href="#">All shoes Variety</a></li>
+                <li><a class="dropdown-item" href="#">Halfshoes/slipons</a></li>
+                <li><a class="dropdown-item" href="#">Oxfords/Plain</a></li>
+                <li><a class="dropdown-item" href="#">Loafers</a></li>
+                <li><a class="dropdown-item" href="#">Exotic Feet</a></li>
+                <li><a class="dropdown-item" href="#">Sneakers</a></li>
+                <li><a class="dropdown-item" href="#">Boots</a></li>
+                <li><a class="dropdown-item" href="#">Sandals</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" href="#" id="suitDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Suit
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="suitDropdown">
+                <li><a class="dropdown-item" href="#">All Suits Variety</a></li>
+                <li><a class="dropdown-item" href="#">Corporate</a></li>
+                <li><a class="dropdown-item" href="#">Tuxedo</a></li>
+                <li><a class="dropdown-item" href="#">Blazer</a></li>
+                <li><a class="dropdown-item" href="#">Jacket</a></li>
+              </ul>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="sale.html">Sale</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="payment.html">Contact/payment</a>
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-outline-primary position-relative ms-3" data-bs-toggle="modal" data-bs-target="#cartModal">
+          🛒 Cart
+          <span id="cart-count" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+            0
+          </span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="container my-5">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-md-6 text-center mb-4 mb-md-0">
+          <img src="short.jpg" alt="Quality Baggy Short" id="shorts">
+        </div>
+        <div class="col-md-6">
+          <div class="product-details">
+            <div class="product-title">Quality Baggy Short</div>
+            <div class="product-price">₦27,000</div>
+            <form id="product-form">
+              <div class="mb-3">
+                <label for="quantity" class="form-label">Quantity</label>
+                <input type="number" min="1" value="1" id="quantity" class="form-control" required>
+              </div>
+              <div class="mb-3">
+                <label for="size" class="form-label">Size</label>
+                <select id="size" class="form-select" required>
+                  <option value="" selected disabled>Select size</option>
+                  <option value="S">Small</option>
+                  <option value="M">Medium</option>
+                  <option value="L">Large</option>
+                  <option value="XL">X-Large</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="color" class="form-label">Color</label>
+                <input type="text" id="color" class="form-control" placeholder="e.g. Black, Blue" required>
+              </div>
+              <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea id="description" class="form-control" rows="3" placeholder="Description"></textarea>
+              </div>
+              <button type="button" class="btn btn-success cart-btn" onclick="addToCart()">Add to Cart</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="cartModalLabel">Shopping Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <ul id="cart-items" class="list-group mb-3"></ul>
+            <h4>Total: ₦<span id="cart-total">0</span></h4>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#paymentModal">Proceed to Payment</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Payment Modal -->
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="paymentModalLabel">Payment Details</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="payment-form">
+              <div class="mb-3">
+                <label for="payment-method" class="form-label">Select Payment Method</label>
+                <select class="form-select" id="payment-method" required>
+                  <option value="" selected disabled>Select a method</option>
+                  <option value="card">Card Payment</option>
+                  <option value="account">Account Payment</option>
+                </select>
+              </div>
+              <div id="card-payment-fields" style="display: none;">
+                <div class="mb-3">
+                  <label for="card-name" class="form-label">Cardholder Name</label>
+                  <input type="text" class="form-control" id="card-name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                  <label for="card-number" class="form-label">Card Number</label>
+                  <input type="text" class="form-control" id="card-number" placeholder="1234 5678 9012 3456">
+                </div>
+                <div class="mb-3">
+                  <label for="expiry-date" class="form-label">Expiry Date</label>
+                  <input type="text" class="form-control" id="expiry-date" placeholder="MM/YY">
+                </div>
+                <div class="mb-3">
+                  <label for="cvv" class="form-label">CVV</label>
+                  <input type="text" class="form-control" id="cvv" placeholder="123">
+                </div>
+              </div>
+              <div id="account-payment-fields" style="display: none;">
+                <div class="mb-3">
+                  <label for="account-name" class="form-label">Account Holder Name</label>
+                  <input type="text" class="form-control" id="account-name" placeholder="Enter your name">
+                </div>
+                <div class="mb-3">
+                  <label for="account-number" class="form-label">Account Number</label>
+                  <input type="text" class="form-control" id="account-number" placeholder="Enter your account number">
+                </div>
+                <div class="mb-3">
+                  <label for="bank-name" class="form-label">Bank Name</label>
+                  <input type="text" class="form-control" id="bank-name" placeholder="Enter your bank name">
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" class="btn btn-success" id="pay-now">Pay Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="text-center mt-5 py-4" style="background: #f8f9fa; border-top: 1px solid #eee;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h6 class="text-success fw-bold mb-2">Heavenly Trendy Boutique</h6>
+            <p class="mb-0" style="font-size: 0.95rem;">Quality, Style &amp; Comfort for Every Occasion</p>
+          </div>
+          <div class="col-md-4 mb-3 mb-md-0">
+            <h6 class="fw-bold mb-2">Quick Links</h6>
+            <a href="index.html" class="text-decoration-none text-secondary d-block mb-1">Home</a>
+            <a href="wardrobe.html" class="text-decoration-none text-secondary d-block mb-1">Wardrobe</a>
+            <a href="sale.html" class="text-decoration-none text-secondary d-block mb-1">Sale</a>
+            <a href="payment.html" class="text-decoration-none text-secondary d-block">Contact/Payment</a>
+          </div>
+          <div class="col-md-4">
+            <h6 class="fw-bold mb-2">Contact Us</h6>
+            <p class="mb-1" style="font-size: 0.95rem;">
+              <span class="fw-semibold">Email:</span> <a href="mailto:info@heavenlytrendy.com" class="text-success text-decoration-none">heavenlytrendy1@gmail.com</a>
+            </p>
+            <p class="mb-1" style="font-size: 0.95rem;">
+              <span class="fw-semibold">Whatsapp/Phone:</span> <a href="tel:+234 904-396-4393" class="text-success text-decoration-none">+234 904-396-4393</a>
+            </p>
+            <div>
+              <a href="#" class="me-2 text-secondary"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="me-2 text-secondary"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-secondary"><i class="bi bi-twitter-x"></i></a>
+            </div>
+          </div>
+        </div>
+        <hr class="my-4">
+        <div class="small text-muted">
+          &copy; 2025 Heavenly Trendy Boutique. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // Cart logic
+      const cartItems = [];
+      const cartItemsList = document.getElementById('cart-items');
+      const cartTotal = document.getElementById('cart-total');
+      const cartCount = document.getElementById('cart-count');
+
+      function addToCart() {
+        const quantity = parseInt(document.getElementById('quantity').value) || 1;
+        const size = document.getElementById('size').value;
+        const color = document.getElementById('color').value;
+        const description = document.getElementById('description').value;
+        const price = 27000;
+
+        if (!size) {
+          alert('Please select a size.');
+          return;
+        }
+        if (!color) {
+          alert('Please enter a color.');
+          return;
+        }
+
+        for (let i = 0; i < quantity; i++) {
+          cartItems.push({ name: `Baggy Short (${size}, ${color})`, price });
+        }
+
+        // Update cart UI
+        cartItemsList.innerHTML = '';
+        cartItems.forEach((item, idx) => {
+          const listItem = document.createElement('li');
+          listItem.className = 'list-group-item d-flex justify-content-between align-items-center';
+          listItem.textContent = `${item.name} - ₦${item.price.toLocaleString()}`;
+          // Remove button
+          const removeBtn = document.createElement('button');
+          removeBtn.className = 'btn btn-sm btn-danger ms-2';
+          removeBtn.textContent = 'Remove';
+          removeBtn.onclick = function() {
+            cartItems.splice(idx, 1);
+            addToCartUpdateUI();
+          };
+          listItem.appendChild(removeBtn);
+          cartItemsList.appendChild(listItem);
+        });
+
+        addToCartUpdateUI();
+        cartCount.textContent = cartItems.length;
+        // Show cart modal
+        const cartModal = new bootstrap.Modal(document.getElementById('cartModal'));
+        cartModal.show();
+      }
+
+      function addToCartUpdateUI() {
+        cartItemsList.innerHTML = '';
+        cartItems.forEach((item, idx) => {
+          const listItem = document.createElement('li');
+          listItem.className = 'list-group-item d-flex justify-content-between align-items-center';
+          listItem.textContent = `${item.name} - ₦${item.price.toLocaleString()}`;
+          const removeBtn = document.createElement('button');
+          removeBtn.className = 'btn btn-sm btn-danger ms-2';
+          removeBtn.textContent = 'Remove';
+          removeBtn.onclick = function() {
+            cartItems.splice(idx, 1);
+            addToCartUpdateUI();
+            cartCount.textContent = cartItems.length;
+          };
+          listItem.appendChild(removeBtn);
+          cartItemsList.appendChild(listItem);
+        });
+        // Update total
+        const total = cartItems.reduce((sum, item) => sum + item.price, 0);
+        cartTotal.textContent = total.toLocaleString();
+        cartCount.textContent = cartItems.length;
+      }
+
+      // Payment modal logic
+      document.getElementById('payment-method').addEventListener('change', (event) => {
+        const selectedMethod = event.target.value;
+        const cardFields = document.getElementById('card-payment-fields');
+        const accountFields = document.getElementById('account-payment-fields');
+        cardFields.style.display = selectedMethod === 'card' ? 'block' : 'none';
+        accountFields.style.display = selectedMethod === 'account' ? 'block' : 'none';
+      });
+
+      // Validate form fields and show green border for valid inputs
+      function validateInput(input) {
+        if (input.value.trim() !== '') {
+          input.classList.remove('is-invalid');
+          input.classList.add('is-valid');
+        } else {
+          input.classList.remove('is-valid');
+          input.classList.add('is-invalid');
+        }
+      }
+      document.querySelectorAll('#payment-form input').forEach(input => {
+        input.addEventListener('blur', () => validateInput(input));
+      });
+
+      // Handle payment submission
+      document.getElementById('pay-now').addEventListener('click', () => {
+        const paymentMethod = document.getElementById('payment-method').value;
+        if (paymentMethod === 'card') {
+          const cardName = document.getElementById('card-name');
+          const cardNumber = document.getElementById('card-number');
+          const expiryDate = document.getElementById('expiry-date');
+          const cvv = document.getElementById('cvv');
+          validateInput(cardName);
+          validateInput(cardNumber);
+          validateInput(expiryDate);
+          validateInput(cvv);
+          if (cardName.value && cardNumber.value && expiryDate.value && cvv.value) {
+            alert('Payment successful! Thank you for your purchase.');
+            resetCart();
+          } else {
+            alert('Please fill in all card details.');
+          }
+        } else if (paymentMethod === 'account') {
+          const accountName = document.getElementById('account-name');
+          const accountNumber = document.getElementById('account-number');
+          const bankName = document.getElementById('bank-name');
+          validateInput(accountName);
+          validateInput(accountNumber);
+          validateInput(bankName);
+          if (accountName.value && accountNumber.value && bankName.value) {
+            alert('Payment successful! Thank you for your purchase.');
+            resetCart();
+          } else {
+            alert('Please fill in all account details.');
+          }
+        } else {
+          alert('Please select a payment method.');
+        }
+      });
+
+      // Reset cart after successful payment
+      function resetCart() {
+        cartItems.length = 0;
+        addToCartUpdateUI();
+        cartCount.textContent = '0';
+        const paymentModal = bootstrap.Modal.getInstance(document.getElementById('paymentModal'));
+        paymentModal.hide();
+      }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

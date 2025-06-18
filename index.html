@@ -1,0 +1,1478 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HEAVENLY TRENDY BOUTIQUE</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+      body {
+        background-image: url('image.png');
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 100vh;
+      }
+      .navbar {
+        box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+      }
+      .flex-box-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        justify-content: center;
+        margin-bottom: 40px;
+      }
+      .flex-box {
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        width: 220px;
+        min-height: 320px;
+        margin-bottom: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.2s;
+        position: relative;
+        overflow: hidden;
+      }
+      .flex-box:hover {
+        transform: translateY(-8px) scale(1.03);
+        box-shadow: 0 8px 24px rgba(36,174,61,0.15);
+      }
+      .box-img-wrapper {
+        width: 100%;
+        height: 220px;
+        position: relative;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 12px 12px 0 0;
+        overflow: hidden;
+      }
+      .box-img-wrapper img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px 12px 0 0;
+        background: #fff;
+        transition: transform 0.3s;
+      }
+      .flex-box:hover .box-img-wrapper img {
+        transform: scale(1.07);
+      }
+      .box-img-text {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(36, 174, 61, 0.85);
+        color: #fff;
+        text-align: center;
+        padding: 8px 0;
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: 0 0 12px 12px;
+        width: 100%;
+        letter-spacing: 0.5px;
+      }
+      .product-title {
+        margin-top: 12px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: #222;
+        text-align: center;
+      }
+      .alert-link {
+        font-weight: 600;
+        color: #1a7f37;
+      }
+      .custom-alert {
+        min-width: 320px;
+        max-width: 400px;
+        pointer-events: auto;
+        box-shadow: 0 4px 24px rgba(36,174,61,0.12);
+        border-radius: 10px;
+        font-size: 1.05rem;
+      }
+      footer {
+        background: linear-gradient(90deg, #1b1c1e 60%, #2c3831 100%);
+        border-top: 1px solid #140e0e;
+        padding: 18px 0 10px 0;
+        margin-top: 40px;
+        font-size: 1rem;
+        color: #888;
+        width: 100%;
+      }
+      @media (max-width: 600px) {
+        .flex-box {
+          width: 95vw;
+          min-width: unset;
+        }
+        .box-img-wrapper {
+          height: 180px;
+        }
+        .custom-alert {
+          min-width: 90vw;
+          max-width: 95vw;
+        }
+      }
+
+      @keyframes colorChangeShopNow {
+  0%   { background-color: #198754; color: #fff; }
+  20%  { background-color: #0d6efd; color: #fff; }
+  40%  { background-color: #dc3545; color: #fff; }
+  60%  { background-color: #ffc107; color: #222; }
+  80%  { background-color: #6610f2; color: #fff; }
+  100% { background-color: #198754; color: #fff; }
+}
+#shopNowBtn {
+  animation: colorChangeShopNow 3s infinite;
+  transition: background 0.3s, color 0.3s;
+  border: none;
+}
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light px-4" style="background: #fff;">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img src="WhatsApp Image 2025-05-06 at 17.37.44_d20bf922.jpg" alt="Logo" height="40" width="40" class="rounded-circle border border-2 border-success">
+          <span class="fw-bold text-success" style="letter-spacing:1px;">Heavenly Trendy</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase d-flex align-items-center">
+            <li class="nav-item px-2">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="wardrobe.html">Wardrobe</a>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" href="#" id="tshirtDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                T-Shirts & Pants
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="tshirtDropdown">
+                <li><a class="dropdown-item" href="#">Vintage</a></li>
+                <li><a class="dropdown-item" href="#">Polos</a></li>
+                <li><a class="dropdown-item" href="#">Corporate Shirts</a></li>
+                <li><a class="dropdown-item" href="#">Casual/Print Shirts</a></li>
+                <li><a class="dropdown-item" href="#">Trouser</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" href="#" id="accessoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Accessories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="accessoriesDropdown">
+                <li><a class="dropdown-item" href="#">All Accessories</a></li>
+                <li><a class="dropdown-item" href="#">Bracelets</a></li>
+                <li><a class="dropdown-item" href="#">Cufflinks</a></li>
+                <li><a class="dropdown-item" href="#">Sunglasses</a></li>
+                <li><a class="dropdown-item" href="#">Belts</a></li>
+                <li><a class="dropdown-item" href="#">Bags & Wallets</a></li>
+                <li><a class="dropdown-item" href="#">Watches</a></li>
+                <li><a class="dropdown-item" href="#">Hats</a></li>
+                <li><a class="dropdown-item" href="#">Ties</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" href="#" id="shoesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Shoes
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="shoesDropdown">
+                <li><a class="dropdown-item" href="#">All shoes Variety</a></li>
+                <li><a class="dropdown-item" href="#">Halfshoes/slipons</a></li>
+                <li><a class="dropdown-item" href="#">Oxfords/Plain</a></li>
+                <li><a class="dropdown-item" href="#">Loafers</a></li>
+                <li><a class="dropdown-item" href="#">Exotic Feet</a></li>
+                <li><a class="dropdown-item" href="#">Sneakers</a></li>
+                <li><a class="dropdown-item" href="#">Boots</a></li>
+                <li><a class="dropdown-item" href="#">Sandals</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" href="#" id="suitDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Suit
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="suitDropdown">
+                <li><a class="dropdown-item" href="#">All Suits Variety</a></li>
+                <li><a class="dropdown-item" href="#">Corporate</a></li>
+                <li><a class="dropdown-item" href="#">Tuxedo</a></li>
+                <li><a class="dropdown-item" href="#">Blazer</a></li>
+                <li><a class="dropdown-item" href="#">Jacket</a></li>
+              </ul>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="sale.html">Sales</a>
+            </li>
+             <li class="nav-item px-2">
+              <a class="nav-link" href="shop.html">shopping</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="payment.html">Contact/payment</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Alert Placeholder -->
+    <div id="liveAlertPlaceholder" style="position:fixed; top:70px; left:0; right:0; z-index:1055; width:100%; display:flex; justify-content:center; pointer-events:none;"></div>
+
+    <!-- Top Buttons Row -->
+    <div class="container-fluid mt-2">
+      <div class="row">
+        <div class="col-6 d-flex align-items-start">
+          <button type="button" class="btn btn-primary position-relative d-flex align-items-center gap-2" id="inboxBtn">
+            <i class="bi bi-inbox"></i> Inbox
+            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+              99+
+              <span class="visually-hidden">unread messages</span>
+            </span>
+          </button>
+        </div>
+        <div class="col-6 d-flex justify-content-end align-items-start">
+          <button type="button" class="btn btn-primary position-relative d-flex align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#profileModal">
+            <img src="CEO-removebg-preview (1).png" alt="Profile" class="rounded-circle" style="width:32px; height:32px; object-fit:cover; border:2px solid #fff;">
+            Profile
+            <span class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+              <span class="visually-hidden">New alerts</span>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="container py-4">
+      <h1 class="text-center mb-2 fw-bold text-success" style="letter-spacing:1px;">Welcome to Heavenly Trendy Boutique</h1>
+      <h5 class="text-center text-secondary mb-4">Your one-stop shop for the latest fashion trends.</h5>
+      <!-- Shop Now Button -->
+<div class="text-center mb-4">
+  <button id="shopNowBtn" class="btn btn-success btn-lg px-5 shadow-sm" type="button" data-bs-toggle="modal" data-bs-target="#calculatorModal">
+    Shop Now
+  </button>
+</div>
+
+<!-- Calculator Modal -->
+<div class="modal fade" id="calculatorModal" tabindex="-1" aria-labelledby="calculatorModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="calculatorModalLabel">Shopping Calculator</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="calcForm">
+          <div id="calcItems">
+            <div class="input-group mb-2">
+              <input type="text" class="form-control" placeholder="Item name" required>
+              <input type="number" class="form-control" placeholder="Price" min="0" required>
+              <input type="number" class="form-control" placeholder="Qty" min="1" value="1" required>
+              <button type="button" class="btn btn-danger remove-item" tabindex="-1">&times;</button>
+            </div>
+          </div>
+          <button type="button" class="btn btn-secondary btn-sm mb-3" id="addItemBtn">Add Item</button>
+          <div class="mb-2">
+            <strong>Total: ₦<span id="calcTotal">0</span></strong>
+          </div>
+          <button type="submit" class="btn btn-success w-100">Checkout</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+      <div class="alert alert-primary shadow-sm" role="alert">
+        <i class="bi bi-info-circle-fill me-2"></i>
+        Welcome to Heavenly Trendy Boutique! We are thrilled to have you here. Explore our latest collection of trendy fashion items and enjoy a <b>10% discount</b> on your first purchase. Don't miss out on our exclusive offers and new arrivals. Happy shopping!
+      </div>
+      <div class="alert alert-success shadow-sm" role="alert">
+        <i class="bi bi-bag-heart-fill me-2"></i>
+        <strong>New Arrivals!</strong> Check out our latest collection of trendy fashion items. From stylish shirts to comfortable shorts, we have something for everyone. Don't miss out on the latest trends,
+        <a href="shop.html" class="alert-link">check it out!</a>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="joger.jpg" class="card-img-top img-fluid" alt="Joggers">
+            <div class="card-body text-center">
+              <h5 class="card-title">Quality Joggers</h5>
+              <p class="card-text">Trendy, comfortable joggers for all occasions.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="up and down.jpg" class="card-img-top img-fluid" alt="Up and Down">
+            <div class="card-body text-center">
+              <h5 class="card-title">Quality 2pcs Set</h5>
+              <p class="card-text">Elegant two-piece set for a standout look.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100 shadow-sm">
+            <img src="long sleeve.jpg" class="card-img-top img-fluid" alt="Long Sleeve">
+            <div class="card-body text-center">
+              <h5 class="card-title">Long Sleeve Shirt</h5>
+              <p class="card-text">Classic long sleeve for a smart appearance.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carousel -->
+      <div id="carouselExample" class="carousel slide mb-5 shadow" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner rounded-4 overflow-hidden">
+          <div class="carousel-item active">
+            <img src="woman-wearing-hat-front-view.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="woman-8729895_1280.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="beautiful-young-black-woman-holding-shopping-bags-feeling-excited.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="lv-weave-leather-monk-shoe-brown-oxford-444_large.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="three-attractive-african-american-woman-brown-tunic-dress-posed-clothes-store-with-handbags-it-s-time-shopping.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="WhatsApp Image 2025-05-02 at 06.56.18_51e40fb1.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="flex-box-container shadow-lg">
+        <!-- Example Product Box (repeat for each product) -->
+        <div class="flex-box">
+          <a href="shirt.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="top1.jpg" alt="Quality top" class="img-fluid">
+            <span class="box-img-text">Quality top</span>
+          </a>
+          <!-- Rating -->
+          <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+          <div class="text-center fw-bold text-success my-2">₦15,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="shirt.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="joger.jpg" alt="Quality baggy Short" class="img-fluid">
+            <span class="box-img-text">Quality joggers</span>
+          </a>
+       <!-- Rating -->
+       <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+          <div class="text-center fw-bold text-success my-2">₦20,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="shirt.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="up and down.jpg" alt="Quality Design men's wear" class="img-fluid">
+            <span class="box-img-text">Quality Design 2pcs</span>
+          </a>
+       <!-- Rating -->
+       <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+          <div class="text-center fw-bold text-success my-2">₦30,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="shirt4.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="long sleeve.jpg" alt="High Quality Polo" class="img-fluid">
+            <span class="box-img-text">High Quality causual long sleeve</span>
+          </a>
+        <!-- Rating -->
+        <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+        <div class="text-center fw-bold text-success my-2">₦15,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="men-shoes.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="hoodie.jpg" alt="Quality men's causual Hoodie" class="img-fluid">
+            <span class="box-img-text">Quality men's causual Hoodie</span>
+          </a>
+               <!-- Rating -->
+               <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+          <div class="text-center fw-bold text-success my-2">₦17,500</div>
+        </div>
+        <div class="flex-box-container shadow-lg">
+        <!-- Example Product Box (repeat for each product) -->
+        <div class="flex-box">
+          <a href="shirt.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="long lee.jpg" alt="Quality top" class="img-fluid">
+            <span class="box-img-text">Qualitycausal long sleeve</span>
+          </a>
+          <!-- Rating -->
+          <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+          <div class="text-center fw-bold text-success my-2">₦15,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="shirt.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="long slee.jpg" alt="Quality baggy Short" class="img-fluid">
+            <span class="box-img-text">Quality causual long sleeve</span>
+          </a>
+       <!-- Rating -->
+       <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+          <div class="text-center fw-bold text-success my-2">₦15,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="shirt.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="LONG SLEEV.jpg" alt="Quality Design men's wear" class="img-fluid">
+            <span class="box-img-text">Quality causual long sleeve</span>
+          </a>
+       <!-- Rating -->
+       <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+          <div class="text-center fw-bold text-success my-2">₦15,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="shirt4.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="hoodie2.jpg" alt="High Quality Polo" class="img-fluid">
+            <span class="box-img-text">Quality men's causual Hoodie</span>
+          </a>
+        <!-- Rating -->
+        <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+        <div class="text-center fw-bold text-success my-2">₦15,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="men-shoes.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="j up and down.jpg" alt="Quality men's causual Hoodie" class="img-fluid">
+            <span class="box-img-text">Quality men's causual 3D Hoodie</span>
+          </a>
+               <!-- Rating -->
+               <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+          <div class="text-center fw-bold text-success my-2">₦17,500</div>
+        </div>
+
+      <!-- Carousel -->
+      <div id="carouselExample" class="carousel slide mb-5" data-bs-ride="carousel" data-bs-interval="3000">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="woman-wearing-hat-front-view.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="woman-8729895_1280.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="beautiful-young-black-woman-holding-shopping-bags-feeling-excited.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="lv-weave-leather-monk-shoe-brown-oxford-444_large.webp" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="three-attractive-african-american-woman-brown-tunic-dress-posed-clothes-store-with-handbags-it-s-time-shopping.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="WhatsApp Image 2025-05-02 at 06.56.18_51e40fb1.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="flex-box-container shadow-lg">
+        <!-- Example Product Box (repeat for each product) -->
+        <div class="flex-box">
+          <a href="short.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="short.jpg" alt="Quality baggy Short" class="img-fluid">
+            <span class="box-img-text">Quality baggy Short</span>
+          </a>
+          <!-- Rating -->
+          <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+          <div class="text-center fw-bold text-success my-2">₦15,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="short2.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="short2.jpg" alt="Quality baggy Short" class="img-fluid">
+            <span class="box-img-text">Quality baggy Short</span>
+          </a>
+       <!-- Rating -->
+       <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+          <div class="text-center fw-bold text-success my-2">₦15,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="shirt.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="shirt.jpg" alt="Quality Design men's wear" class="img-fluid">
+            <span class="box-img-text">Quality Design men's wear</span>
+          </a>
+       <!-- Rating -->
+       <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+          <div class="text-center fw-bold text-success my-2">₦11,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="shirt4.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="shrt4.jpg" alt="High Quality Polo" class="img-fluid">
+            <span class="box-img-text">High Quality Polo</span>
+          </a>
+          <!-- Rating -->
+          <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+          
+        <div class="text-center fw-bold text-success my-2">₦11,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="men-shoes.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="shoe men.jpg" alt="Quality shoes/sneakers" class="img-fluid">
+            <span class="box-img-text">Quality shoes/sneakers</span>
+          </a>
+               <!-- Rating -->
+               <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+          <div class="text-center fw-bold text-success my-2">₦10,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="shirt3.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="long slee3.jpg" alt="Trendy Look" class="img-fluid">
+            <span class="box-img-text">quality causual Long Sleeve</span>
+          </a>
+       <!-- Rating -->
+       <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+          <div class="text-center fw-bold text-success my-2">₦15,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="shirt7.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="long slee4.jpg" alt="Trendy Look" class="img-fluid">
+            <span class="box-img-text">quality causual Long Sleeve</span>
+          </a>
+               <!-- Rating -->
+               <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+               <div class="text-center fw-bold text-success my-2">₦17,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="shirt8.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="shirt8.jpg" alt="Trendy Look" class="img-fluid">
+            <span class="box-img-text">Trendy Look</span>
+          </a>
+             <!-- Rating -->
+             <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+             <div class="text-center fw-bold text-success my-2">₦17,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="shirt9.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="shirt9.jpg" alt="Trendy Look" class="img-fluid">
+            <span class="box-img-text">Trendy Look</span>
+          </a>
+              <!-- Rating -->
+              <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+              <div class="text-center fw-bold text-success my-2">₦17,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="IMG-20250517-WA0001.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="IMG-20250517-WA0001.jpg" alt="Trendy Look" class="img-fluid">
+            <span class="box-img-text">Trendy Look</span>
+          </a>
+             <!-- Rating -->
+             <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+             <div class="text-center fw-bold text-success my-2">₦17,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="IMG-20250517-WA0058.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="IMG-20250517-WA0058.jpg" alt="Trendy Look" class="img-fluid">
+            <span class="box-img-text">Trendy Look</span>
+          </a>
+              <!-- Rating -->
+              <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+              <div class="text-center fw-bold text-success my-2">₦15,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="IMG-20250517-WA0003.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="IMG-20250517-WA0003.jpg" alt="Trendy Look" class="img-fluid">
+            <span class="box-img-text">Trendy Look</span>
+          </a>
+          <!-- Rating -->
+          <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+          <div class="text-center fw-bold text-success my-2">₦15,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="IMG-20250517-WA0051.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="IMG-20250517-WA0051.jpg" alt="Trendy Look" class="img-fluid">
+            <span class="box-img-text">Trendy Look</span>
+          </a>
+        <!-- Rating -->
+        <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+        <div class="text-center fw-bold text-success my-2">₦15,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="IMG-20250517-WA0005.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="IMG-20250517-WA0005.jpg" alt="Trendy Look" class="img-fluid">
+            <span class="box-img-text">Trendy Look</span>
+          </a>
+        </div>
+        <div class="flex-box">
+          <a href="IMG-20250517-WA0006.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="IMG-20250517-WA0006.jpg" alt="Trendy Look" class="img-fluid">
+            <span class="box-img-text">Trendy Look</span>
+          </a>
+        <!-- Rating -->
+        <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+        <div class="text-center fw-bold text-success my-2">₦15,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="IMG-20250517-WA0056.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="IMG-20250517-WA0056.jpg" alt="Trendy Look" class="img-fluid">
+            <span class="box-img-text">Trendy Look</span>
+          </a>
+        <!-- Rating -->
+        <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+        <div class="text-center fw-bold text-success my-2">₦15,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="IMG-20250517-WA0053.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="IMG-20250517-WA0053.jpg" alt="Trendy Look" class="img-fluid">
+            <span class="box-img-text">Trendy Look</span>
+          </a>
+       <!-- Rating -->
+       <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+        <div class="text-center fw-bold text-success my-2">₦15,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="IMG-20250517-WA0050.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="IMG-20250517-WA0050.jpg" alt="Trendy Look" class="img-fluid">
+            <span class="box-img-text">Trendy Look</span>
+          </a>
+        </div>
+        <div class="flex-box">
+          <a href="IMG-20250517-WA0043.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="IMG-20250517-WA0043.jpg" alt="Trendy Look" class="img-fluid">
+            <span class="box-img-text">Trendy Look</span>
+          </a>
+        <!-- Rating -->
+        <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+        <div class="text-center fw-bold text-success my-2">₦15,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="IMG-20250517-WA0045.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="IMG-20250517-WA0045.jpg" alt="Trendy Look" class="img-fluid">
+            <span class="box-img-text">Trendy Look</span>
+          </a>
+       <!-- Rating -->
+       <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+        <div class="text-center fw-bold text-success my-2">₦15,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="IMG-20250517-WA0042.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="IMG-20250517-WA0042.jpg" alt="Trendy Look" class="img-fluid">
+            <span class="box-img-text">Trendy Look</span>
+          </a>
+        <!-- Rating -->
+        <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+        <div class="text-center fw-bold text-success my-2">₦15,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="IMG-20250517-WA0041.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="IMG-20250517-WA0041.jpg" alt="Trendy Look" class="img-fluid">
+            <span class="box-img-text">Trendy Look</span>
+          </a>
+     <!-- Rating -->
+     <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+        <div class="text-center fw-bold text-success my-2">₦15,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="IMG-20250517-WA0038.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="IMG-20250517-WA0038.jpg" alt="Trendy Look" class="img-fluid">
+            <span class="box-img-text">Trendy Look</span>
+          </a>
+         <!-- Rating -->
+         <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+       <div class="text-center fw-bold text-success my-2">₦15,500</div>
+        </div>
+        <div class="flex-box">
+          <a href="IMG-20250517-WA0031.html" class="box-img-wrapper" style="display:block; text-decoration:none;">
+            <img src="IMG-20250517-WA0031.jpg" alt="Trendy Look" class="img-fluid">
+            <span class="box-img-text">Trendy Look</span>
+          </a>
+       <!-- Rating -->
+       <div class="text-center my-1">
+            <span class="text-warning">
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-fill"></i>
+              <i class="bi bi-star-half"></i>
+            </span>
+            <span class="text-secondary small ms-1">4.5/5</span>
+          </div>
+       <div class="text-center fw-bold text-success my-2">₦15,500</div>
+        </div>
+      </div>
+
+      <!-- Professional Baggy Jeans Product Grid -->
+      <div class="container my-5">
+        <h2 class="text-center mb-4 fw-bold text-success">Baggy Jeans Collection</h2>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="late bug.jpg" class="card-img-top img-fluid" alt="Quality latest baggy">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Quality Latest Baggy</h5>
+                <!-- Rating -->
+                <div class="mb-2 text-warning">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <span class="text-secondary small ms-1">4.5/5</span>
+                </div>
+                <p class="card-text text-muted">Trendy, comfortable baggy for all occasions.</p>
+                <button class="btn btn-success w-100 mt-2"><i class="bi bi-cart-plus me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="bug1.jpg" class="card-img-top img-fluid" alt="Quality baggy jeans">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Quality Baggy Jeans</h5>
+                <div class="mb-2 text-warning">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <span class="text-secondary small ms-1">4.0/5</span>
+                </div>
+                <p class="card-text text-muted">Elegant baggy for a standout look.</p>
+                <button class="btn btn-success w-100 mt-2"><i class="bi bi-cart-plus me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="bug.jpg" class="card-img-top img-fluid" alt="Quality Female baggy jeans">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Quality Female Baggy Jeans</h5>
+                <div class="mb-2 text-warning">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                  <span class="text-secondary small ms-1">3.5/5</span>
+                </div>
+                <p class="card-text text-muted">Classic style for a smart appearance.</p>
+                <button class="btn btn-success w-100 mt-2"><i class="bi bi-cart-plus me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="bug4.jpg" class="card-img-top img-fluid" alt="Quality Baggy">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Quality Baggy</h5>
+                <div class="mb-2 text-warning">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <span class="text-secondary small ms-1">3.0/5</span>
+                </div>
+                <p class="card-text text-muted">Trendy, comfortable baggy for all occasions.</p>
+                <button class="btn btn-success w-100 mt-2"><i class="bi bi-cart-plus me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="bug2.jpg" class="card-img-top img-fluid" alt="Quality Baggy">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Quality Baggy</h5>
+                <div class="mb-2 text-warning">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <span class="text-secondary small ms-1">4.5/5</span>
+                </div>
+                <p class="card-text text-muted">Quality baggy set for a standout look.</p>
+                <button class="btn btn-success w-100 mt-2"><i class="bi bi-cart-plus me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="f bug.jpg" class="card-img-top img-fluid" alt="Quality Female baggy">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Quality Female Baggy</h5>
+                <div class="mb-2 text-warning">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                  <span class="text-secondary small ms-1">3.5/5</span>
+                </div>
+                <p class="card-text text-muted">Classic baggy for a smart appearance.</p>
+                <button class="btn btn-success w-100 mt-2"><i class="bi bi-cart-plus me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  <div class="row g-4">
+  <div class="col-md-4">
+  <div class="card h-100 shadow-sm border-0">
+              <img src="bug9.jpg" class="card-img-top img-fluid" alt="Quality latest baggy">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Quality Latest Baggy</h5>
+                <div class="mb-2 text-warning">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <span class="text-secondary small ms-1">3.0/5</span>
+                </div>
+                <p class="card-text text-muted">Trendy, comfortable baggy for all occasions.</p>
+                <button class="btn btn-success w-100 mt-2"><i class="bi bi-cart-plus me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="bug8.jpg" class="card-img-top img-fluid" alt="Quality baggy jeans">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Quality Baggy Jeans</h5>
+                <div class="mb-2 text-warning">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <span class="text-secondary small ms-1">4.0/5</span>
+                </div>
+                <p class="card-text text-muted">Elegant baggy for a standout look.</p>
+                <button class="btn btn-success w-100 mt-2"><i class="bi bi-cart-plus me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="bug7.jpg" class="card-img-top img-fluid" alt="Quality Female baggy jeans">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Quality latest Jeans</h5>
+                <div class="mb-2 text-warning">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <i class="bi bi-star"></i>
+                  <span class="text-secondary small ms-1">3.5/5</span>
+                </div>
+                <p class="card-text text-muted">Classic style for a smart appearance.</p>
+                <button class="btn btn-success w-100 mt-2"><i class="bi bi-cart-plus me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="bug6.jpg" class="card-img-top img-fluid" alt="Quality Baggy">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Quality Baggy</h5>
+                <div class="mb-2 text-warning">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <i class="bi bi-star"></i>
+                  <span class="text-secondary small ms-1">3.0/5</span>
+                </div>
+                <p class="card-text text-muted">Trendy, comfortable baggy for all occasions.</p>
+                <button class="btn btn-success w-100 mt-2"><i class="bi bi-cart-plus me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card h-100 shadow-sm border-0">
+              <img src="bug5.jpg" class="card-img-top img-fluid" alt="Quality Baggy">
+              <div class="card-body text-center">
+                <h5 class="card-title fw-semibold">Quality Baggy</h5>
+                <div class="mb-2 text-warning">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-half"></i>
+                  <span class="text-secondary small ms-1">4.5/5</span>
+                </div>
+                <p class="card-text text-muted">Quality baggy set for a standout look.</p>
+                <button class="btn btn-success w-100 mt-2"><i class="bi bi-cart-plus me-1"></i>Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vision Section: Place this just before your <footer> -->
+<div class="container my-5">
+  <h2 class="text-center fw-bold text-success mb-4">Our Vision</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0 text-center">
+        <div class="card-body">
+          <i class="bi bi-eye-fill text-success fs-1 mb-3"></i>
+          <h5 class="card-title fw-semibold">Inspire Confidence</h5>
+          <p class="card-text text-muted">
+            We believe fashion is a tool for self-expression. Our vision is to inspire confidence in everyone who wears our collections.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0 text-center">
+        <div class="card-body">
+          <i class="bi bi-globe2 text-success fs-1 mb-3"></i>
+          <h5 class="card-title fw-semibold">Promote Diversity</h5>
+          <p class="card-text text-muted">
+            We celebrate diversity and inclusivity, offering styles for all personalities, backgrounds, and occasions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card h-100 shadow-sm border-0 text-center">
+        <div class="card-body">
+          <i class="bi bi-stars text-success fs-1 mb-3"></i>
+          <h5 class="card-title fw-semibold">Deliver Quality</h5>
+          <p class="card-text text-muted">
+            Our commitment is to provide top-quality, trendy, and comfortable fashion that exceeds your expectations every time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Animation for vision cards */
+.vision-animate {
+  opacity: 0;
+  transform: translateY(40px) scale(0.96);
+  transition: opacity 0.7s cubic-bezier(.4,2,.6,1), transform 0.7s cubic-bezier(.4,2,.6,1);
+}
+.vision-animate.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+.vision-animate.delay-1 {
+  transition-delay: 0.2s;
+}
+.vision-animate.delay-2 {
+  transition-delay: 0.4s;
+}
+</style>
+<script>
+  // Reveal animation on scroll
+  function revealVisionCards() {
+    document.querySelectorAll('.vision-animate').forEach(card => {
+      const rect = card.getBoundingClientRect();
+      if (rect.top < window.innerHeight - 60) {
+        card.classList.add('visible');
+      }
+    });
+  }
+  window.addEventListener('scroll', revealVisionCards);
+  window.addEventListener('DOMContentLoaded', revealVisionCards);
+</script>
+
+    <footer class="bg-dark text-light pt-5 pb-3 mt-5">
+  <div class="container">
+    <div class="row align-items-center">
+      <!-- Brand & Social -->
+      <div class="col-md-4 mb-4 mb-md-0 text-center text-md-start">
+        <div class="d-flex align-items-center mb-2 justify-content-center justify-content-md-start">
+          <img src="WhatsApp Image 2025-05-06 at 17.37.44_d20bf922.jpg" alt="Logo" width="40" height="40" class="rounded-circle border border-success me-2">
+          <span class="fw-bold text-success fs-5">Heavenly Trendy Boutique</span>
+        </div>
+        <p class="mb-2 small">Quality, Style &amp; Comfort for Every Occasion</p>
+        <div class="d-flex gap-2 justify-content-center justify-content-md-start">
+          <a href="#" class="text-light fs-5" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="text-light fs-5" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="text-light fs-5" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="text-light fs-5" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+      <!-- Quick Links -->
+      <div class="col-md-4 mb-4 mb-md-0 text-center">
+        <h6 class="fw-bold mb-3 text-success">Quick Links</h6>
+        <ul class="list-unstyled mb-0">
+          <li><a href="index.html" class="text-decoration-none text-light d-block mb-2"><i class="bi bi-house-door me-1"></i>Home</a></li>
+          <li><a href="wardrobe.html" class="text-decoration-none text-light d-block mb-2"><i class="bi bi-bag me-1"></i>Wardrobe</a></li>
+          <li><a href="sale.html" class="text-decoration-none text-light d-block mb-2"><i class="bi bi-tags me-1"></i>Sale</a></li>
+          <li><a href="payment.html" class="text-decoration-none text-light d-block"><i class="bi bi-credit-card me-1"></i>Contact/Payment</a></li>
+        </ul>
+      </div>
+      <!-- Contact -->
+      <div class="col-md-4 text-center text-md-start">
+        <h6 class="fw-bold mb-3 text-success">Contact Us</h6>
+        <p class="mb-2 small">
+          <i class="bi bi-envelope-fill text-success me-1"></i>
+          <a href="mailto:heavenlytrendy1@gmail.com" class="text-light text-decoration-none">heavenlytrendy1@gmail.com</a>
+        </p>
+        <p class="mb-2 small">
+          <i class="bi bi-telephone-fill text-success me-1"></i>
+          <a href="tel:+234 9043964393" class="text-light text-decoration-none">+234 9043964393</a>
+        </p>
+        <p class="mb-0 small">
+          <i class="bi bi-geo-alt-fill text-success me-1"></i>
+          123 Trendy Avenue, Lagos, Nigeria
+        </p>
+      </div>
+    </div>
+    <!-- Add vision-animate classes if missing -->
+    <script>
+    document.querySelectorAll('.container .row.g-4 .card').forEach(function(card, idx) {
+      card.classList.add('vision-animate');
+      if (idx === 1) card.classList.add('delay-1');
+      if (idx === 2) card.classList.add('delay-2');
+    });
+    function revealVisionCards() {
+      document.querySelectorAll('.vision-animate').forEach(function(card) {
+        const rect = card.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 60) {
+          card.classList.add('visible');
+        }
+      });
+    }
+    revealVisionCards();
+    window.addEventListener('scroll', revealVisionCards);
+  });
+    </script>
+
+  <!-- Score Alert Logic -->
+  <script>
+  let score = 10;
+  const alertPlaceholder = document.getElementById('liveAlertPlaceholder');
+  const alertBtn = document.getElementById('liveAlertBtn');
+  function appendAlert(message, type) {
+    alertPlaceholder.innerHTML = `
+      <div class="alert alert-${type} alert-dismissible custom-alert mt-2" role="alert" style="pointer-events:auto;">
+        <div class="d-flex align-items-center gap-2">
+          <i class="bi ${type === 'warning' ? 'bi-exclamation-triangle-fill text-warning' : type === 'success' ? 'bi-check-circle-fill text-success' : 'bi-info-circle-fill text-info'} fs-4"></i>
+          <span>${message}</span>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    `;
+  }
+  if (alertBtn) {
+    alertBtn.addEventListener('click', () => {
+      if (score < 20) {
+        score = 20;
+        appendAlert(`Your score has increased to ${score}%!`, 'success');
+      } else {
+        appendAlert(`Your score is already at ${score}%. Shop more to get more scores!`, 'info');
+        alertBtn.disabled = true;
+      }
+    });
+  }
+
+  // Inbox button alert
+  const inboxBtn = document.getElementById('inboxBtn');
+  if (inboxBtn) {
+    inboxBtn.addEventListener('click', function() {
+      appendAlert('You are not admin or eligible to access this inbox.', 'warning');
+      setTimeout(() => {
+        const alertDiv = alertPlaceholder.querySelector('.alert-warning');
+        if (alertDiv) {
+          alertPlaceholder.innerHTML = '';
+        }
+      }, 2500);
+    });
+  }
+</script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Add this modal just before your closing </body> tag -->
+<div class="modal fade" id="cartCalculatorModal" tabindex="-1" aria-labelledby="cartCalculatorModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="cartCalculatorModalLabel">Cart Calculator</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form id="cartCalcForm">
+          <div id="cartCalcItems"></div>
+          <div class="mb-3 mt-3">
+            <label class="fw-bold">Total Amount:</label>
+            <span id="cartCalcTotal" class="fw-bold text-success fs-5">₦0</span>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Update your Shop Now button and Add to Cart buttons with class 'open-cart-calc' and data attributes -->
+<a href="shop.html" id="shopNowBtn" class="btn btn-success btn-lg px-5 shadow-sm open-cart-calc" data-bs-toggle="modal" data-bs-target="#cartCalculatorModal">Shop Now</a>
+
+<!-- Example Add to Cart button (update all similar buttons) -->
+<button class="btn btn-success w-100 mt-2 open-cart-calc" data-product="Quality Latest Baggy" data-price="15500" data-bs-toggle="modal" data-bs-target="#cartCalculatorModal">
+  <i class="bi bi-cart-plus me-1"></i>Add to Cart
+</button>
+
+<!-- Cart Calculator Script -->
+<script>
+const cartItems = [];
+
+function updateCartCalculator() {
+  const itemsDiv = document.getElementById('cartCalcItems');
+  const totalSpan = document.getElementById('cartCalcTotal');
+  if (!itemsDiv || !totalSpan) return;
+
+  if (cartItems.length === 0) {
+    itemsDiv.innerHTML = '<div class="text-muted text-center">No items in cart yet.</div>';
+    totalSpan.textContent = '₦0';
+    return;
+  }
+
+  let total = 0;
+  itemsDiv.innerHTML = cartItems.map((item, idx) => `
+    <div class="mb-2 d-flex align-items-center justify-content-between">
+      <span>${item.name} <span class="text-secondary small">x${item.qty}</span></span>
+      <span>₦${item.price * item.qty}</span>
+      <button type="button" class="btn btn-sm btn-outline-danger ms-2 remove-cart-item" data-idx="${idx}">&times;</button>
+    </div>
+  `).join('');
+  cartItems.forEach(item => total += item.price * item.qty);
+  totalSpan.textContent = '₦' + total.toLocaleString();
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Open calculator on Shop Now or Add to Cart
+  document.querySelectorAll('.open-cart-calc').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      // If Add to Cart, add the product
+      const name = btn.getAttribute('data-product');
+      const price = parseInt(btn.getAttribute('data-price'));
+      if (name && price) {
+        // Check if already in cart
+        const found = cartItems.find(item => item.name === name && item.price === price);
+        if (found) {
+          found.qty += 1;
+        } else {
+          cartItems.push({ name, price, qty: 1 });
+        }
+      }
+      // Show modal and update
+      setTimeout(updateCartCalculator, 200);
+    });
+  });
+
+  // Remove item from cart
+  document.getElementById('cartCalcItems').addEventListener('click', function(e) {
+    if (e.target.classList.contains('remove-cart-item')) {
+      const idx = parseInt(e.target.getAttribute('data-idx'));
+      cartItems.splice(idx, 1);
+      updateCartCalculator();
+    }
+  });
+
+  // When modal opens, update calculator
+  const cartModal = document.getElementById('cartCalculatorModal');
+  cartModal.addEventListener('show.bs.modal', updateCartCalculator);
+});
+</script>
+  </body>
+</html>

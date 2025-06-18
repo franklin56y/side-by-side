@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HEAVENLY TRENDY BOUTIQUE | Sale & Payment</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+      html, body {
+        height: 100%;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-image: url('image.png');
+        background-size: cover;
+        background-attachment: fixed;
+      }
+      footer {
+        margin-top: auto;
+      }
+      .payment-card {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(36,174,61,0.10);
+        padding: 2rem 1.5rem;
+        max-width: 500px;
+        margin: 2rem auto;
+      }
+      .payment-card h3 {
+        color: #24ae3d;
+        font-weight: 700;
+      }
+      .payment-details {
+        font-size: 1.08rem;
+      }
+      .payment-details i {
+        color: #24ae3d;
+        margin-right: 8px;
+      }
+      .bank-logo {
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+        margin-right: 12px;
+      }
+      .btn-success {
+        background: #24ae3d;
+        border: none;
+      }
+      .btn-success:hover {
+        background: #1a7f37;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light px-4" style="background: #fff;">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+          <img src="WhatsApp Image 2025-05-06 at 17.37.44_d20bf922.jpg" alt="Logo" height="40" width="40" class="rounded-circle border border-2 border-success">
+          <span class="fw-bold text-success" style="letter-spacing:1px;">Heavenly Trendy</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNavbar">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase d-flex align-items-center">
+            <li class="nav-item px-2">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="wardrobe.html">Wardrobe</a>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" href="#" id="tshirtDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                T-Shirts & Pants
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="tshirtDropdown">
+                <li><a class="dropdown-item" href="#">Vintage</a></li>
+                <li><a class="dropdown-item" href="#">Polos</a></li>
+                <li><a class="dropdown-item" href="#">Corporate Shirts</a></li>
+                <li><a class="dropdown-item" href="#">Casual/Print Shirts</a></li>
+                <li><a class="dropdown-item" href="#">Trouser</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" href="#" id="accessoriesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Accessories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="accessoriesDropdown">
+                <li><a class="dropdown-item" href="#">All Accessories</a></li>
+                <li><a class="dropdown-item" href="#">Bracelets</a></li>
+                <li><a class="dropdown-item" href="#">Cufflinks</a></li>
+                <li><a class="dropdown-item" href="#">Sunglasses</a></li>
+                <li><a class="dropdown-item" href="#">Belts</a></li>
+                <li><a class="dropdown-item" href="#">Bags & Wallets</a></li>
+                <li><a class="dropdown-item" href="#">Watches</a></li>
+                <li><a class="dropdown-item" href="#">Hats</a></li>
+                <li><a class="dropdown-item" href="#">Ties</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" href="#" id="shoesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Shoes
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="shoesDropdown">
+                <li><a class="dropdown-item" href="#">All shoes Variety</a></li>
+                <li><a class="dropdown-item" href="#">Halfshoes/slipons</a></li>
+                <li><a class="dropdown-item" href="#">Oxfords/Plain</a></li>
+                <li><a class="dropdown-item" href="#">Loafers</a></li>
+                <li><a class="dropdown-item" href="#">Exotic Feet</a></li>
+                <li><a class="dropdown-item" href="#">Sneakers</a></li>
+                <li><a class="dropdown-item" href="#">Boots</a></li>
+                <li><a class="dropdown-item" href="#">Sandals</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown px-2">
+              <a class="nav-link dropdown-toggle" href="#" id="suitDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Suit
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="suitDropdown">
+                <li><a class="dropdown-item" href="#">All Suits Variety</a></li>
+                <li><a class="dropdown-item" href="#">Corporate</a></li>
+                <li><a class="dropdown-item" href="#">Tuxedo</a></li>
+                <li><a class="dropdown-item" href="#">Blazer</a></li>
+                <li><a class="dropdown-item" href="#">Jacket</a></li>
+              </ul>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link active fw-bold text-success" href="sale.html">Sale</a>
+            </li>
+            <li class="nav-item px-2">
+              <a class="nav-link" href="payment.html">Contact/payment</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Payment Section -->
+    <div class="container">
+      <div class="payment-card mt-5">
+        <div class="text-center mb-4">
+          <i class="bi bi-credit-card-2-front-fill fs-1 text-success"></i>
+          <h3 class="mt-2">Payment & Bank Details</h3>
+          <p class="text-secondary mb-0">Secure your order by making payment to the account below. After payment, kindly send your proof of payment to our WhatsApp or email for confirmation.</p>
+        </div>
+        <div class="payment-details mb-4">
+          <div class="d-flex align-items-center mb-2">
+            <img src="OPay-logo-slogan_page-0001-scaled-1-1024x974.jpg" alt="Bank Logo" class="bank-logo">
+            <div>
+              <div><strong>Bank:</strong> Opay</div>
+              <div><strong>Account Name:</strong> Heavenly Trendy Boutique</div>
+              <div><strong>Account Number:</strong> <span class="text-success">9043964393</span></div>
+            </div>
+          </div>
+          <div class="mb-2"><i class="bi bi-telephone-fill"></i> <b>Phone:</b> <a href="tel:+2349043964393" class="text-success text-decoration-none">+2349043964393</a></div>
+          <div class="mb-2"><i class="bi bi-whatsapp"></i> <b>WhatsApp:</b> <a href="https://wa.me/2349043964393" class="text-success text-decoration-none" target="_blank">Chat Now</a></div>
+          <div class="mb-2"><i class="bi bi-envelope-fill"></i> <b>Email:</b> <a href="mailto:heavenlytrendy1@gmail.com" class="text-success text-decoration-none">heavenlytrendy1@gmail.com</a></div>
+        </div>
+        <div class="text-center">
+          <a href="https://wa.me/2349043964393" class="btn btn-success btn-lg d-inline-flex align-items-center gap-2 mb-2" target="_blank">
+            <i class="bi bi-whatsapp"></i> Send Payment Proof
+          </a>
+          <a href="mailto:heavenlytrendy1@gmail.com" class="btn btn-outline-success btn-lg d-inline-flex align-items-center gap-2 mb-2">
+            <i class="bi bi-envelope"></i> Email Payment Proof
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5 py-4" style="background: linear-gradient(90deg, #f8f9fa 60%, #e9f7ef 100%); border-top: 1px solid #eee;">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-4 mb-4 mb-md-0 text-md-start text-center">
+            <div class="d-flex align-items-center mb-2 justify-content-md-start justify-content-center">
+              <img src="WhatsApp Image 2025-05-06 at 17.37.44_d20bf922.jpg" alt="Logo" width="38" height="38" class="rounded-circle border border-success me-2">
+              <span class="fw-bold text-success fs-5">Heavenly Trendy Boutique</span>
+            </div>
+            <p class="mb-2" style="font-size: 0.97rem;">Quality, Style &amp; Comfort for Every Occasion</p>
+            <div class="d-flex gap-2 justify-content-md-start justify-content-center">
+              <a href="#" class="text-secondary fs-5" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="text-secondary fs-5" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="text-secondary fs-5" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+              <a href="#" class="text-secondary fs-5" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            </div>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h6 class="fw-bold mb-3 text-success">Quick Links</h6>
+            <ul class="list-unstyled mb-0">
+              <li><a href="index.html" class="text-decoration-none text-secondary d-block mb-2"><i class="bi bi-house-door me-1"></i>Home</a></li>
+              <li><a href="wardrobe.html" class="text-decoration-none text-secondary d-block mb-2"><i class="bi bi-bag me-1"></i>Wardrobe</a></li>
+              <li><a href="sale.html" class="text-decoration-none text-secondary d-block mb-2"><i class="bi bi-tags me-1"></i>Sale</a></li>
+              <li><a href="payment.html" class="text-decoration-none text-secondary d-block"><i class="bi bi-credit-card me-1"></i>Contact/Payment</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4 text-md-start text-center">
+            <h6 class="fw-bold mb-3 text-success">Contact Us</h6>
+            <p class="mb-2" style="font-size: 0.97rem;">
+              <i class="bi bi-envelope-fill text-success me-1"></i>
+              <a href="mailto:info@heavenlytrendy.com" class="text-success text-decoration-none">info@heavenlytrendy.com</a>
+            </p>
+            <p class="mb-2" style="font-size: 0.97rem;">
+              <i class="bi bi-telephone-fill text-success me-1"></i>
+              <a href="tel:+2348000000000" class="text-success text-decoration-none">+234 800 000 0000</a>
+            </p>
+            <p class="mb-0" style="font-size: 0.97rem;">
+              <i class="bi bi-geo-alt-fill text-success me-1"></i>
+              123 Trendy Avenue, Lagos, Nigeria
+            </p>
+          </div>
+        </div>
+        <hr class="my-4">
+        <div class="small text-muted text-center">
+          &copy; 2025 Heavenly Trendy Boutique. All rights reserved.
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
